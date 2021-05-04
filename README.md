@@ -16,7 +16,7 @@ Transformer is selected in this problem because the Transformer language model i
 
 ## Alternatives
 
-Bag-of-word method was the closest canadidate before Transformer was selected to solve this problem, and after gone through the estimated performance of Bag-of-word, there are a few major disadvantages, first, does not capture the meaning of each word, second, it does not consider sequence nor reasoning nor use of language-structure with the input text, and finally, it can misinterpret short phases for example, the phase "not good" and "good" are counted as one "not, and two "good" which bag-of-word consider a positive signal which in reality their effect are opposite and cancelling out each other.
+Bag-of-word method was the closest canadidate before Transformer was selected to solve this problem, and after gone through the estimated performance of Bag-of-word, there are a few major disadvantages, first, does not capture the meaning of each word, second, it does not consider sequence nor reasoning nor use of language-structure with the input text, and finally, it can misinterpret short phases for example, the phase "not good" and "good" are counted as one "not", and two "good" which bag-of-word consider a positive signal which in reality their effect are opposite and cancelling out each other.
 
 Transformer is the best option because it is the state-of-the-art language model that before it make the decision it is able to capture all meanings from the whole input text, understand the meaning of each word, and learn to consider inter-relationship between words in the input text. Last but not least, not only it consider inter-relationship of a word during processing with other words before it, the bidirectional nature of the BERT / Electra models consider words after too.
 
@@ -28,10 +28,10 @@ This program use Electra base pre-trained model provided by Google fine-tuning b
 
 ## Points to note
 
-- The program use PyTorch
 - Python 3.7 or above
+- The program use PyTorch
 - GPU is required. It was trained on a NVIDIA Telsa P100 GPU and total program execution time (including training) is less than 30 minutes
-- You need to download dataset from Kaggle before running the problem, the link is here - https://www.kaggle.com/c/nlp-getting-started
+- You need to download dataset from Kaggle before running the program, the link is here - https://www.kaggle.com/c/nlp-getting-started
 
 
 Feel free to download and run it, enjoy!
